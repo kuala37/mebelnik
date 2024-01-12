@@ -1,0 +1,247 @@
+body {
+    background-color: #eaeae8;
+    color: #495057;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+
+.navbar {
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    background-color: #f5f5dc;
+    color: #fff;
+    z-index: 1000;
+}
+.category-menu {
+    background-color: #ededc4;
+    height: 100%; 
+    color: black;
+    top: 56px; 
+    position: fixed;
+    z-index: 1000;
+    width: 200px;
+    padding: 15px;
+    overflow-y: auto;
+    transition: left 0.3s ease-in-out;
+}
+.category-menu a {
+  color: black;
+}
+.main-content {
+    margin-left: 200px;
+    padding: 76px;
+    
+}
+
+.logo-img {
+  max-height: 50px; /* Задайте максимальную высоту для логотипа */
+  margin-right: 10px; /* Расстояние между логотипом и текстом */
+}
+
+.main-product-content {
+  margin-left: 200px;
+  padding: 56px;
+}
+
+.footer {
+    background-color: #f5f5dc;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.footer a {
+    color: #fff;
+    width: 100%;
+    
+}
+
+.card {
+    width: 225px;
+    min-height: 350px;
+    margin-bottom: 20px; 
+    margin-left: 20px; 
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden; 
+
+  }
+  
+  .card:hover {
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+  }
+  
+  .card__top {
+    flex: 0 0 220px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.2s;
+  }
+  
+  .card__image:hover > img {
+    transform: scale(1.1);
+  }
+  
+  .card__label {
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #ff6633;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .card__bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: 10px;
+    align-items: center; 
+
+  }
+  
+  
+  
+  .card__price::after {
+    content: "₽";
+    margin-left: 4px;
+    position: relative;
+  }
+  
+  .card__price--discount {
+    font-weight: 700;
+    font-size: 19px;
+    color: #414141;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  
+  
+  .card__price--common {
+    font-weight: 400;
+    font-size: 17px;
+    color: #606060;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+  }
+  
+  
+  .card__title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #414141;
+    text-align: center; 
+
+  }
+  
+  .card__title:hover {
+    color: #ff6633;
+  }
+  
+  .card__add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #f5fff2;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #70c05b;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    align-self: flex-end; 
+}
+  
+  .card__add:hover {
+    border: 1px solid #ff6633;
+    background-color: #ff6633;
+    color: #fff;
+  }
+  
+  .product-img{
+    width: 390px;
+    height: 390px;
+    object-fit: cover;
+    transition: 0.2s;
+
+  }
+  .sec-title{
+    color: rgb(21 24 27 / 60%)!important;
+  }
+
+  .sec-name a{
+    color: #404e5e !important;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: left;
+}
+
+.table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.btn-td{
+  text-align: right;
+}
+
+.mod-tit{
+  width: 100%;
+}
+.mod-body{
+  width: 100%;
+}
+
+.mod-body h2{
+  text-align-last: center;
+  /* margin-left: 35px; */
+}
